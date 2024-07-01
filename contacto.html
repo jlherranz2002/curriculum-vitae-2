@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo Personal">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="info_personal.html">Información Personal</a></li>
+                <li><a href="info_academica.html">Formación Académica</a></li>
+                <li><a href="experiencia.html">Experiencia Laboral</a></li>
+                <li><a href="otros.html">Otros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contacto</h1>
+        <form action="submit_form.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+            
+            <label for="suscribir">Suscribirme al boletín:</label>
+            <input type="checkbox" id="suscribir" name="suscribir"><br><br>
+            
+            <p>Sexo:</p>
+            <input type="radio" id="hombre" name="sexo" value="hombre">
+            <label for="hombre">Hombre</label><br>
+            <input type="radio" id="mujer" name="sexo" value="mujer">
+            <label for="mujer">Mujer</label><br><br>
+            
+            <label for="asunto">Asunto:</label>
+            <select id="asunto" name="asunto">
+                <option value="consulta">Consulta</option>
+                <option value="sugerencia">Sugerencia</option>
+                <option value="otro">Otro</option>
+            </select><br><br>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mi Nombre. <a href="contacto.html">Contáctame</a></p>
+    </footer>
+</body>
+</html>
